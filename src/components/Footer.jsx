@@ -1,4 +1,5 @@
 import React from "react";
+
 import footImg from "../img/footer/instagram-1.webp";
 import footImg2 from "../img/footer/instagram-2.webp";
 import footImg3 from "../img/footer/instagram-3.webp";
@@ -10,8 +11,8 @@ import footImg8 from "../img/footer/instagram-8.webp";
 import footImg9 from "../img/footer/instagram-9.webp";
 import footImg10 from "../img/footer/instagram-10.webp";
 
-const Footer = () => {
-  //Footer Section
+const footer = () => {
+  //footer Section
 
   return (
     <footer className="bg-[#e9ecef] font-san pt-10 mt-auto">
@@ -282,30 +283,30 @@ const Footer = () => {
           © 2021, Your company . All Rights Reserved.
         </span>
         <ul className="inline-flex py-5 sm:ml-auto sm:mt-0 mt-2 justify-center sm:pt-5 gap-3 ">
-          <li class="">
+          <li>
             <img
-              class=" w-10 h-10  text-white"
+              className=" w-10 h-10  text-white"
               src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/visa.svg"
               alt="..."
             />
           </li>
-          <li class="">
+          <li>
             <img
-              class=" w-10 h-10   text-white"
+              className=" w-10 h-10   text-white"
               src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/mastercard.svg"
               alt="..."
             />
           </li>
-          <li class="">
+          <li>
             <img
-              class=" w-10 h-10   text-white"
+              className=" w-10 h-10   text-white"
               src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/paypal.svg"
               alt="..."
             />
           </li>
-          <li class="">
+          <li>
             <img
-              class=" w-10 h-10   text-white"
+              className=" w-10 h-10   text-white"
               src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/western-union.svg"
               alt="..."
             />
@@ -316,4 +317,4 @@ const Footer = () => {
     </footer>
   );
 };
-export default Footer;
+export default footer;
