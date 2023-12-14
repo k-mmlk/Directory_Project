@@ -229,7 +229,7 @@ const footer = () => {
               Daily Offers & Discounts
             </h2>
             <p className="mb-10 text-gray-500 ">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+              Lorem ipsum dolor sit aemt, consectetur adipisicing elit. At
               itaque temporibus.
             </p>
             <div className="flex mb-3">
