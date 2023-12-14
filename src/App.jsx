@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import GuideSection from "./components/GuideSection";
+import CardSection from "./components/CardSection";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <GuideSection />
+      <CardSection/>
+    </div>
+  );
+};
 
-export default App
+export default App;
