@@ -17,70 +17,70 @@ const footer = () => {
   return (
     <footer className="bg-[#e9ecef] font-san pt-10 mt-auto">
       <div className="flex overflow-hidden  ">
-        <a href="">
+        <a href="#">
           <img
             src={footImg}
             className="mt-10 mb-10 hover:rounded-sm  hover:scale-105 transition-all duration-300 ease-in-out"
             alt=""
           />
         </a>
-        <a href="">
+        <a href="#">
           <img
             src={footImg2}
             className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
             alt=""
           />
         </a>
-        <a href="">
+        <a href="#">
           <img
             src={footImg3}
             className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
             alt=""
           />
         </a>
-        <a href="">
+        <a href="#">
           <img
             src={footImg4}
             className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
             alt=""
           />
         </a>
-        <a href="">
+        <a href="#">
           <img
             src={footImg5}
             className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
             alt=""
           />
         </a>
-        <a href="">
+        <a href="#">
           <img
             src={footImg6}
             className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
             alt=""
           />
         </a>
-        <a href="">
+        <a href="#">
           <img
             src={footImg7}
             className="mt-10 mb-10 hover:rounded-sm  lg:   hover:scale-105 transition-all duration-300 ease-in-out"
             alt=""
           />
         </a>
-        <a href="">
+        <a href="#">
           <img
             src={footImg8}
             className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
             alt=""
           />
         </a>
-        <a href="">
+        <a href="#">
           <img
             src={footImg9}
             className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
             alt=""
           />
         </a>
-        <a href="">
+        <a href="#">
           <img
             src={footImg10}
             className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
