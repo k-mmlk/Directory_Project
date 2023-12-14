@@ -1,8 +1,13 @@
 import React from 'react'
 
+import Article from './components/Article'
+
+
+
 const App = () => {
+  
   return (
-    <div>App</div>
+    <div><Article/></div>
   )
 }
 
