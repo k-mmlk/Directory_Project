@@ -6,7 +6,6 @@ import CardSection from "./components/CardSection";
 
 import React from 'react'
 import Section1 from './components/Section1'
-import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -17,7 +16,6 @@ const App = () => {
       <CardSection/>
 
       <Section1/>
-      <Footer />
       
 
     </div>
