@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Guide from "./Guide";
 import Glide from "@glidejs/glide";
 
@@ -34,6 +34,20 @@ const GuideGroup = () => {
     },
   ];
 
+  const [focusedBullet, setFocusedBullet] = useState(0);
+
+  const handleBulletClick = (index) => {
+    setFocusedBullet(index);
+  };
+
+  const bulletItems = Array.from({ length: 4 }, (_, index) => ({
+    index,
+  }));
+
+  const bulletContainerStyle = {
+    transform: `translateX(-${focusedBullet * 16}px)`,
+  };
+
   useEffect(() => {
     const glide = new Glide(".glide-section-one", {
       type: "carousel",
@@ -46,10 +60,10 @@ const GuideGroup = () => {
         1024: {
           perView: 4,
         },
-        768: {
+        991: {
           perView: 3,
         },
-        640: {
+        768: {
           perView: 2,
         },
         399: {
@@ -80,22 +94,25 @@ const GuideGroup = () => {
           </ul>
         </div>
 
-        <div
-          className="glide__bullets absolute -bottom-9 block md:hidden lg:hidden xl:hidden"
-          data-glide-el="controls[nav]"
-        >
-          <button
-            className="glide__bullet bg-gray-300 active:bg-blue-800"
-            data-glide-dir="=0"
-          />
-          <button
-            className="glide__bullet bg-gray-300 active:bg-blue-800"
-            data-glide-dir="=1"
-          />
-          <button
-            className="glide__bullet bg-gray-300 active:bg-blue-800"
-            data-glide-dir="=2"
-          />
+        <div className="w-[70px] px-4 h-[50px] -bottom-6 mx-auto overflow-hidden relative md:hidden lg:hidden xl:hidden">
+          <div
+            className="absolute bottom-0 w-[150px] py-2 flex"
+            data-glide-el="controls[nav]"
+            style={bulletContainerStyle}
+          >
+            {bulletItems.map((bullet, index) => (
+              <button
+                key={index}
+                className={`glide__bullet bg-gray-400 hover:bg-blue-600 hover:border-blue-600 mr-1 select-none duration-300 ${
+                  focusedBullet === index
+                    ? "focus:bg-blue-600 focus:border-blue-600 bg-blue-600 border-blue-600 scale-95"
+                    : "scale-50"
+                }`}
+                onClick={() => handleBulletClick(index)}
+                data-glide-dir={`=${index}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

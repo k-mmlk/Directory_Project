@@ -5,10 +5,12 @@ const Card = ({ id, img, bgImg, name, roomName, type, rating, cost }) => {
   const numbers = Array.from({ length }, (_, index) => index + 1);
 
   return (
-    <li className="glide__slide">
-      <div className="hover:-translate-y-1 transition-all duration-300 shadow-lg">
+    <li className="glide__slide h-auto">
+      <div className="hover:-translate-y-1 transition-all duration-300 shadow-lg h-full bg-white font-san rounded-lg">
         <div className="relative">
-          <img className="rounded-t-lg" src={bgImg} alt="" />
+          <a href="#">
+            <img className="rounded-t-lg" src={bgImg} alt="" />
+          </a>
           <div className="absolute top-5 right-5">
             <button className="w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white">
               <svg
@@ -34,16 +36,19 @@ const Card = ({ id, img, bgImg, name, roomName, type, rating, cost }) => {
                 src={img}
                 alt=""
               />
-              <span className="text-white font-semibold">{name}</span>
+              <span className="text-white text-sm">{name}</span>
             </a>
           </div>
         </div>
         <div className="p-5 bg-white rounded-b-lg">
-          <a href="#" className="text-gray-800 font-bold text-lg mb-1">
+          <a
+            href="#"
+            className="text-gray-800 font-bold text-base inline-block mb-2"
+          >
             {roomName}
           </a>
           <div className="flex items-center justify-between mb-3">
-            <p className="text-gray-400">{type}</p>
+            <p className="text-gray-500 text-sm">{type}</p>
             <div className="flex text-yellow-300">
               {numbers.map((number) =>
                 number <= rating ? (
@@ -78,7 +83,7 @@ const Card = ({ id, img, bgImg, name, roomName, type, rating, cost }) => {
               )}
             </div>
           </div>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-500 text-base">
             <span className="text-2xl font-bold text-blue-700 me-1">
               ${cost}
             </span>
