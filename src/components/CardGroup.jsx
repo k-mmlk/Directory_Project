@@ -106,7 +106,7 @@ const CardGroup = () => {
     <div>
       <div className="glide glide-section-two relative">
         <div className="glide__track" data-glide-el="track">
-          <ul className="glide__slides pt-5 w-[300px]">
+          <ul className="glide__slides py-5 w-[300px]">
             {cards.map((card) => (
               <Card
                 key={card.id}

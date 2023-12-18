@@ -6,7 +6,7 @@ const Card = ({ id, img, bgImg, name, roomName, type, rating, cost }) => {
 
   return (
     <li className="glide__slide">
-      <div className="hover:-translate-y-1 transition-all duration-300">
+      <div className="hover:-translate-y-1 transition-all duration-300 shadow-lg">
         <div className="relative">
           <img className="rounded-t-lg" src={bgImg} alt="" />
           <div className="absolute top-5 right-5">
