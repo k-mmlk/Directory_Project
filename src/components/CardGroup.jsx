@@ -126,7 +126,7 @@ const CardGroup = () => {
           className="glide__bullets absolute -bottom-9 block "
           data-glide-el="controls[nav]"
         >
-          {/* <button
+          <button
             className="glide__bullet bg-gray-300 active:bg-blue-800"
             data-glide-dir="=0"
           />
@@ -138,7 +138,7 @@ const CardGroup = () => {
             className="glide__bullet bg-gray-300 active:bg-blue-800"
             data-glide-dir="=2"
           />
-          <button
+          {/* <button
             className="glide__bullet bg-gray-300 active:bg-blue-800"
             data-glide-dir="=3"
           />

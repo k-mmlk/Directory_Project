@@ -1,6 +1,9 @@
 import React from "react";
 
 const Card = ({ id, img, bgImg, name, roomName, type, rating, cost }) => {
+  const length = 5;
+  const numbers = Array.from({ length }, (_, index) => index + 1);
+
   return (
     <li className="glide__slide">
       <div className="hover:-translate-y-1 transition-all duration-300">
