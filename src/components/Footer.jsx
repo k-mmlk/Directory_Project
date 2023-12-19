@@ -1,94 +1,71 @@
 import React from "react";
-import footImg from "../img/footer/instagram-1.webp";
-import footImg2 from "../img/footer/instagram-2.webp";
-import footImg3 from "../img/footer/instagram-3.webp";
-import footImg4 from "../img/footer/instagram-4.webp";
-import footImg5 from "../img/footer/instagram-5.webp";
-import footImg6 from "../img/footer/instagram-6.webp";
-import footImg7 from "../img/footer/instagram-7.webp";
-import footImg8 from "../img/footer/instagram-8.webp";
-import footImg9 from "../img/footer/instagram-9.webp";
-import footImg10 from "../img/footer/instagram-10.webp";
+
 import pin from "../img/footer/pin.svg";
 import vimeo from "../img/footer/vimeo.svg";
-const footer = () => {
+import FooterImg from "./FooterImg.jsx";
+
+const Footer = () => {
   //footer Section
+  const images = [
+    {
+      id: 1,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/instagram/instagram-1.jpg",
+    },
+    {
+      id: 2,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/instagram/instagram-2.jpg",
+    },
+    {
+      id: 3,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/instagram/instagram-3.jpg",
+    },
+    {
+      id: 4,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/instagram/instagram-4.jpg",
+    },
+    {
+      id: 5,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/instagram/instagram-5.jpg",
+    },
+    {
+      id: 6,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/instagram/instagram-6.jpg",
+    },
+    {
+      id: 7,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/instagram/instagram-7.jpg",
+    },
+    {
+      id: 8,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/instagram/instagram-8.jpg",
+    },
+    {
+      id: 9,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/instagram/instagram-9.jpg",
+    },
+    {
+      id: 10,
+      image:
+        "https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/instagram/instagram-10.jpg",
+    },
+  ];
 
   return (
     <footer className="bg-[#e9ecef] font-san pt-10 mt-auto">
-      <div className="flex overflow-hidden  ">
-        <a href="#">
-          <img
-            src={footImg}
-            className="mt-10 mb-10 hover:rounded-sm  hover:scale-105 transition-all duration-300 ease-in-out"
-            alt=""
-          />
-        </a>
-        <a href="#">
-          <img
-            src={footImg2}
-            className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
-            alt=""
-          />
-        </a>
-        <a href="#">
-          <img
-            src={footImg3}
-            className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
-            alt=""
-          />
-        </a>
-        <a href="#">
-          <img
-            src={footImg4}
-            className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
-            alt=""
-          />
-        </a>
-        <a href="#">
-          <img
-            src={footImg5}
-            className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
-            alt=""
-          />
-        </a>
-        <a href="#">
-          <img
-            src={footImg6}
-            className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
-            alt=""
-          />
-        </a>
-        <a href="#">
-          <img
-            src={footImg7}
-            className="mt-10 mb-10 hover:rounded-sm  lg:   hover:scale-105 transition-all duration-300 ease-in-out"
-            alt=""
-          />
-        </a>
-        <a href="#">
-          <img
-            src={footImg8}
-            className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
-            alt=""
-          />
-        </a>
-        <a href="#">
-          <img
-            src={footImg9}
-            className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
-            alt=""
-          />
-        </a>
-        <a href="#">
-          <img
-            src={footImg10}
-            className="mt-10 mb-10 hover:rounded-sm    hover:scale-105 transition-all duration-300 ease-in-out"
-            alt=""
-          />
-        </a>
+      <div className="flex ">
+        {images.map(({ id, image }) => (
+          <FooterImg key={id} url={image} />
+        ))}
       </div>
-
       <div className="mx-auto w-full max-w-screen-xl p-3 py-6 lg:py-8 mb-20">
         <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 ">
           <div>
@@ -135,20 +112,15 @@ const footer = () => {
                 <span className="sr-only">Instragram</span>
               </a>
 
-              <button className=" text-gray-500 items-center hover:text-blue-500">
-                <img
-                  src={pin}
-                  alt="pin"
-                  className="w-4 h-4 opacity-70"
-                />
+              <button className=" text-gray-200  items-center hover:text-blue-500">
+                <img src={pin} alt="pin" className="w-4 h-4 opacity-70" />
                 <span className="sr-only">pin</span>
-
               </button>
               <button className=" text-gray-500 items-center hover:text-blue-500">
                 <img
                   src={vimeo}
                   alt="vimeo"
-                  className="w-4 h-4  text-gray-500 ms-2 opacity-70"
+                  className="w-4 h-4  text-gray-300 ms-2 opacity-70"
                 />
 
                 <span className="sr-only">vimeo</span>
@@ -232,10 +204,10 @@ const footer = () => {
               Lorem ipsum dolor sit aemt, consectetur adipisicing elit. At
               itaque temporibus.
             </p>
-            <div className="flex mb-3">
+            <div className="flex  mb-3">
               <input
                 id="textInput"
-                className="border h-10 bg-[#e9ecef] rounded-s-md flex-grow border-e-0 border-neutral-600 outline-none focus:ring focus:ring-blue-300 px-3"
+                className="border  h-10 bg-[#e9ecef] rounded-s-md flex-grow border-e-0 border-neutral-600 outline-none focus:ring focus:ring-blue-300 px-3"
                 type="text"
               />
               <button
@@ -295,4 +267,4 @@ const footer = () => {
     </footer>
   );
 };
-export default footer;
+export default Footer;
