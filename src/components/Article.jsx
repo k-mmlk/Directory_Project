@@ -100,7 +100,7 @@ const Article = () => {
                       <img
                         className="object-cover w-20 h-20 ring-4 ring-white shadow-md shadow-gray-500 rounded-full "
                         alt="Testimonial avatar"
-                        src="src\img\testimonials\avatar.webp"
+                        src="https://directory-v2.vercel.app/_next/image?url=%2Fcontent%2Fimg%2Favatar%2Favatar-3.jpg&w=256&q=75"
                       />
                     </div>
 
@@ -135,7 +135,7 @@ const Article = () => {
                       <img
                         className="object-cover w-20 h-20 ring-4 ring-white shadow-md shadow-gray-500 rounded-full "
                         alt="Testimonial avatar"
-                        src="src\img\testimonials\avatar.webp"
+                        src="https://directory-v2.vercel.app/_next/image?url=%2Fcontent%2Fimg%2Favatar%2Favatar-3.jpg&w=256&q=75"
                       />
                     </div>
 
@@ -170,7 +170,7 @@ const Article = () => {
                       <img
                         className="object-cover w-20 h-20 ring-4 ring-white shadow-md shadow-gray-500 rounded-full "
                         alt="Testimonial avatar"
-                        src="src\img\testimonials\avatar.webp"
+                        src="https://directory-v2.vercel.app/_next/image?url=%2Fcontent%2Fimg%2Favatar%2Favatar-3.jpg&w=256&q=75"
                       />
                     </div>
 
@@ -205,7 +205,7 @@ const Article = () => {
                       <img
                         className="object-cover w-20 h-20 ring-4 ring-white shadow-md shadow-gray-500 rounded-full "
                         alt="Testimonial avatar"
-                        src="src\img\testimonials\avatar.webp"
+                        src="https://directory-v2.vercel.app/_next/image?url=%2Fcontent%2Fimg%2Favatar%2Favatar-3.jpg&w=256&q=75"
                       />
                     </div>
 
@@ -240,7 +240,7 @@ const Article = () => {
                       <img
                         className="object-cover w-20 h-20 ring-4 ring-white shadow-md shadow-gray-500 rounded-full "
                         alt="Testimonial avatar"
-                        src="src\img\testimonials\avatar.webp"
+                        src="https://directory-v2.vercel.app/_next/image?url=%2Fcontent%2Fimg%2Favatar%2Favatar-3.jpg&w=256&q=75"
                       />
                     </div>
 

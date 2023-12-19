@@ -29,7 +29,7 @@ const Header = () => {
   const handlelDocOpen = () => {
     setlDocOpen(!ldocOpen);
   };
-  const logourl = "./src/img/logo.svg";
+  const logourl = "https://directory-v2.vercel.app/content/svg/logo.svg";
   return (
     <header className="z-50 fixed bg-white">
       <nav className="bg-white border-gray-200 dark:bg-gray-900 ">
