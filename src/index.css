@@ -10,3 +10,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Glider.css */
+/* Your custom CSS styles for the glider */
+
+.glider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .glider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.5;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .indicators button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .indicators button.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
