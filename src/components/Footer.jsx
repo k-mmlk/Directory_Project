@@ -112,7 +112,9 @@ const Footer = () => {
                 <span className="sr-only">Instragram</span>
               </a>
 
-              <button className=" text-gray-200  items-center hover:text-blue-500">
+
+              <button className=" text-gray-500 items-center hover:text-blue-500">
+
                 <img src={pin} alt="pin" className="w-4 h-4 opacity-70" />
                 <span className="sr-only">pin</span>
               </button>
