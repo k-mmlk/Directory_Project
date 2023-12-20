@@ -96,7 +96,7 @@ const CardGroup = () => {
     const glide_two = new Glide(".glide-section-two", {
       type: "carousel",
       perView: 4,
-      gap: 20,
+      gap: 31,
       breakpoints: {
         1285: {
           perView: 4,
@@ -147,7 +147,7 @@ const CardGroup = () => {
                 key={index}
                 className={`glide__bullet bg-gray-400 hover:bg-blue-600 hover:border-blue-600 mr-1 select-none duration-300 ${
                   focusedBullet === index
-                    ? "focus:bg-blue-600 focus:border-blue-600 bg-blue-600 border-blue-600 scale-95"
+                    ? "focus:bg-blue-600 focus:border-blue-600 !bg-blue-600 border-blue-600 scale-95"
                     : "scale-50"
                 }`}
                 onClick={() => handleBulletClick(index)}
