@@ -96,7 +96,7 @@ const CardGroup = () => {
     const glide_two = new Glide(".glide-section-two", {
       type: "carousel",
       perView: 4,
-      gap: 20,
+      gap: 31,
       breakpoints: {
         1285: {
           perView: 4,

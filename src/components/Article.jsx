@@ -32,8 +32,8 @@ const Article = () => {
   useEffect(() => {
     const glide = new Glide(glideRef.current, {
       type: "carousel",
-      perView: 2, 
-      gap:20,
+      perView: 2,
+      gap: 20,
       breakpoints: {
         768: {
           perView: 1,
