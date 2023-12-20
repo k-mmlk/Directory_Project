@@ -5,8 +5,8 @@ const Card = ({ id, img, bgImg, name, roomName, type, rating, cost }) => {
   const numbers = Array.from({ length }, (_, index) => index + 1);
 
   return (
-    <li className="glide__slide h-auto">
-      <div className="hover:-translate-y-1 transition-all duration-300 shadow-lg h-full bg-white font-san rounded-lg">
+    <li className="glide__slide !h-auto inline-block py-5">
+      <div className="hover:-translate-y-1 transition-all duration-300 shadow-lg !h-full bg-white font-san rounded-lg">
         <div className="relative">
           <a href="#">
             <img className="rounded-t-lg" src={bgImg} alt="" />

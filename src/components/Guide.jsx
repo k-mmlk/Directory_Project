@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const Guide = ({ id, title, description, img }) => {
   return (
-    <li className="glide__slide">
+    <li className="glide__slide py-5">
       <div className="relative hover:-translate-y-1 duration-300 font-san ">
         <img
           className="rounded-lg h-[350px] w-full object-cover object-center"
