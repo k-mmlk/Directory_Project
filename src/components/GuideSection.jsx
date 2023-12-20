@@ -4,7 +4,7 @@ import GuideHeading from "./GuideHeading";
 
 const GuideSection = () => {
   return (
-    <section className="container px-3 mx-auto min-h-screen flex flex-col justify-center">
+    <section className="2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] px-3 mx-auto py-24 flex flex-col justify-center">
       <GuideHeading />
       <GuideGroup />
     </section>
