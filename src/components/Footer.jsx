@@ -230,41 +230,43 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap flex-col py-2 sm:flex-row justify-between content-center items-center bg-[#343a40] ">
-        <span className=" text-sm sm:justify-center  text-neutral-300 px-4 py-5">
-          © 2021, Your company . All Rights Reserved.
-        </span>
-        <ul className="inline-flex py-5 sm:ml-auto sm:mt-0 mt-2 justify-center sm:pt-5 gap-3 ">
-          <li>
-            <img
-              className=" w-10 h-10  text-white"
-              src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/visa.svg"
-              alt="..."
-            />
-          </li>
-          <li>
-            <img
-              className=" w-10 h-10   text-white"
-              src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/mastercard.svg"
-              alt="..."
-            />
-          </li>
-          <li>
-            <img
-              className=" w-10 h-10   text-white"
-              src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/paypal.svg"
-              alt="..."
-            />
-          </li>
-          <li>
-            <img
-              className=" w-10 h-10   text-white"
-              src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/western-union.svg"
-              alt="..."
-            />
-          </li>
-          <li></li>
-        </ul>
+      <div className="bg-[#343a40]">
+        <div className="flex flex-wrap flex-col sm:flex-row justify-between content-center items-center  container mx-auto py-7">
+          <span className=" text-sm sm:justify-center  text-neutral-300">
+            © 2021, Your company . All Rights Reserved.
+          </span>
+          <ul className="inline-flex mt-4 md:mt-0 justify-center gap-3 ">
+            <li>
+              <img
+                className=" md:w-10 md:h-10 w-8 h-8  text-white"
+                src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/visa.svg"
+                alt="..."
+              />
+            </li>
+            <li>
+              <img
+                className=" md:w-10 md:h-10 w-8 h-8   text-white"
+                src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/mastercard.svg"
+                alt="..."
+              />
+            </li>
+            <li>
+              <img
+                className=" md:w-10 md:h-10 w-8 h-8   text-white"
+                src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/paypal.svg"
+                alt="..."
+              />
+            </li>
+            <li>
+              <img
+                className=" md:w-10 md:h-10 w-8 h-8   text-white"
+                src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/western-union.svg"
+                alt="..."
+              />
+            </li>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

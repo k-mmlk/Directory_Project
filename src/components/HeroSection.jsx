@@ -13,7 +13,7 @@ const HeroSection = () => {
         <div className="hidden duration-1000 ease-in-out" data-carousel-item="">
           <img
             src="https://directory-v2.vercel.app/_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1501621965065-c6e1cf6b53e2.jpg&w=3840&q=75"
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full md:!object-cover"
+            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full object-center !object-cover"
             alt="..."
           />
         </div>
@@ -21,7 +21,7 @@ const HeroSection = () => {
         <div className="hidden duration-1000 ease-in-out" data-carousel-item="">
           <img
             src="https://directory-v2.vercel.app/_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1519974719765-e6559eac2575.jpg&w=3840&q=75"
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full md:!object-cover"
+            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full object-center !object-cover"
             alt="..."
           />
         </div>
@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="hidden duration-1000 ease-in-out" data-carousel-item="">
           <img
             src="https://directory-v2.vercel.app/_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1490578474895-699cd4e2cf59.jpg&w=3840&q=75"
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full md:!object-cover"
+            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full !object-center !object-cover"
             alt="..."
           />
         </div>
@@ -37,7 +37,7 @@ const HeroSection = () => {
         <div className="hidden duration-1000 ease-in-out" data-carousel-item="">
           <img
             src="https://directory-v2.vercel.app/_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1534850336045-c6c6d287f89e.jpg&w=3840&q=75"
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full md:!object-cover"
+            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full object-center !object-cover"
             alt="..."
           />
         </div>
@@ -68,7 +68,7 @@ const HeroSection = () => {
                 <input
                   type="text"
                   placeholder="Location"
-                  className="block col-span-1 p-2 text-![16px] text-gray-900 border border-transparent border-r-0 rounded-r-none border-r-gray-200 rounded-lg bg-gray-50  focus:ring-0 focus:border-0 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                  className="block col-span-2 lg:col-span-1 p-2 text-![16px] text-gray-900 border border-transparent border-r-0 rounded-r-none border-r-gray-200 rounded-lg bg-gray-50  focus:ring-0 focus:border-0 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                 />
                 <select
                   name=""
