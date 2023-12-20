@@ -639,7 +639,7 @@ const Header = () => {
                               viewBox="0 0 24 24"
                               strokeWidth={1}
                               stroke="currentColor"
-                              dataSlot="icon"
+                              dataslot="icon"
                               className="w-8 h-8"
                             >
                               <path
@@ -666,7 +666,7 @@ const Header = () => {
                               viewBox="0 0 24 24"
                               strokeWidth={1}
                               stroke="currentColor"
-                              dataSlot="icon"
+                              dataslot="icon"
                               className="w-8 h-8"
                             >
                               <path
@@ -693,7 +693,7 @@ const Header = () => {
                               viewBox="0 0 24 24"
                               strokeWidth={1}
                               stroke="currentColor"
-                              dataSlot="icon"
+                              dataslot="icon"
                               className="w-8 h-8"
                             >
                               <path
