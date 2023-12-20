@@ -716,7 +716,7 @@ const Header = () => {
                     </div>
                     <div id="colImg" className="col-span-2 grid-cols-none ">
                       <img
-                        src="src/img/Landing/eating.webp"
+                        src="https://directory-v2.vercel.app/_next/image?url=%2Fcontent%2Fimg%2Fphoto%2Fphoto-1521170665346-3f21e2291d8b.jpg&w=3840&q=75"
                         className="h-full object-cover top-0 w-full"
                         alt=""
                       />
