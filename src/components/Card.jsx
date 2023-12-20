@@ -5,11 +5,12 @@ const Card = ({ id, img, bgImg, name, roomName, type, rating, cost }) => {
   const numbers = Array.from({ length }, (_, index) => index + 1);
 
   return (
-    <li className="glide__slide h-auto">
-      <div className="hover:-translate-y-1 transition-all duration-300 shadow-lg h-full bg-white font-san rounded-lg">
-        <div className="relative">
+    <li className="glide__slide !h-auto inline-block py-5">
+      <div className="hover:-translate-y-1 transition-all duration-300 shadow-[0_0_1rem_rgba(0,0,0,0.2)] !h-full bg-white font-san rounded-lg">
+        <div className="relative after:absolute">
           <a href="#">
             <img className="rounded-t-lg" src={bgImg} alt="" />
+            <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-black/70 to-transparent pointer-events-none shadow-inner"></div>
           </a>
           <div className="absolute top-5 right-5">
             <button className="w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white">
