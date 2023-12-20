@@ -33,7 +33,8 @@ const Article = () => {
     const glide = new Glide(glideRef.current, {
       type: "carousel",
       perView: 2,
-      gap: 20,
+      gap: 60,
+      
       breakpoints: {
         768: {
           perView: 1,
@@ -57,9 +58,9 @@ const Article = () => {
     index,
   }));
 
-  // const bulletContainerStyle = {
-  //   transform: `translateX(-${focusedBullet * 16}px)`,
-  // };
+  const bulletContainerStyle = {
+    transform: `translateX(-${focusedBullet * 16}px)`,
+  };
 
   return (
     <div>
@@ -81,7 +82,7 @@ const Article = () => {
           </div>
         </div>
       </section>
-      <section className="w-full h-[900px] pt-20 font-san">
+      <section className="w-full h-[900px] md:lg:h-auto md:lg:py-20 pt-20 font-san">
         <div className="text-center mb-20 ">
           <p className="font-bold text-blue-700 tracking-widest text-lg mb-2 sm:text-sm">
             TESTIMONIALS
@@ -90,12 +91,12 @@ const Article = () => {
             Our Dear customers said about us
           </h1>
         </div>
-        <div className="container mx-auto h-2/3 flex justify-center item-between  px-10 pt-10 ">
-          <div className="glide   " ref={glideRef}>
-            <div className="glide__track  " data-glide-el="track">
-              <ul className="glide__slides  mb-5 ">
-                <li className="glide__slide">
-                  <div className="w-full max-w-md relative px-20 py-10 mt-16 bg-white rounded-lg shadow-md shadow-slate-400 ">
+        <div className="container mx-auto   max-w-[80%]  pt-10 ">
+          <div className="glide" ref={glideRef}>
+            <div className="glide__track  container mx-auto " data-glide-el="track">
+              <ul className="glide__slides    mt-5 ">
+                <li className="glide__slide  lg:px-10  ">
+                  <div className="w-full max-w-md relative px-10 py-10 mt-10 bg-white  rounded-lg shadow-md shadow-slate-400 ">
                     <div className="lg:absolute z-20 overflow-hidden lg:top-1/2 -left-10 flex justify-center -mt-16 md:justify-center">
                       <img
                         className="object-cover w-20 h-20 ring-4 ring-white shadow-md shadow-gray-500 rounded-full "
@@ -129,8 +130,8 @@ const Article = () => {
                     <h1 className="font-bold  text-lg ">Jessica Watson</h1>
                   </div>
                 </li>
-                <li className="glide__slide">
-                  <div className="w-full max-w-md relative px-20 py-10 mt-16 bg-white rounded-lg shadow-md shadow-slate-400 ">
+                <li className="glide__slide  lg:px-10  ">
+                  <div className="w-full max-w-md relative px-10 py-10 mt-10  bg-white rounded-lg shadow-md shadow-slate-400 ">
                     <div className="md:lg:absolute z-20 overflow-hidden md:lg:top-1/2 -left-10 flex justify-center -mt-16 md:justify-center">
                       <img
                         className="object-cover w-20 h-20 ring-4 ring-white shadow-md shadow-gray-500 rounded-full "
@@ -164,8 +165,8 @@ const Article = () => {
                     <h1 className="font-bold  text-lg ">Jessica Watson</h1>
                   </div>
                 </li>
-                <li className="glide__slide">
-                  <div className="w-full max-w-md relative px-20 py-10 mt-16 bg-white rounded-lg shadow-md shadow-slate-400 ">
+                <li className="glide__slide  lg:px-10  ">
+                  <div className="w-full max-w-md relative px-10 py-10 mt-10  bg-white rounded-lg shadow-md shadow-slate-400 ">
                     <div className="md:lg:absolute z-20 overflow-hidden md:lg:top-1/2 -left-10 flex justify-center -mt-16 md:justify-center">
                       <img
                         className="object-cover w-20 h-20 ring-4 ring-white shadow-md shadow-gray-500 rounded-full "
@@ -199,8 +200,8 @@ const Article = () => {
                     <h1 className="font-bold  text-lg ">Jessica Watson</h1>
                   </div>
                 </li>
-                <li className="glide__slide">
-                  <div className="w-full max-w-md relative px-20 py-10 mt-16 bg-white rounded-lg shadow-md shadow-slate-400 ">
+                <li className="glide__slide  lg:px-10  ">
+                  <div className="w-full max-w-md relative px-10 py-10 mt-10  bg-white rounded-lg shadow-md shadow-slate-400 ">
                     <div className="md:lg:absolute z-20 overflow-hidden md:lg:top-1/2 -left-10 flex justify-center -mt-16 md:justify-center">
                       <img
                         className="object-cover w-20 h-20 ring-4 ring-white shadow-md shadow-gray-500 rounded-full "
@@ -234,8 +235,8 @@ const Article = () => {
                     <h1 className="font-bold  text-lg ">Jessica Watson</h1>
                   </div>
                 </li>
-                <li className="glide__slide">
-                  <div className="w-full max-w-md relative px-20 py-10 mt-16 bg-white rounded-lg shadow-md shadow-slate-400 ">
+                <li className="glide__slide  lg:px-10  ">
+                  <div className="w-full max-w-md relative px-10 py-10 mt-10  bg-white rounded-lg shadow-md shadow-slate-400 ">
                     <div className="md:lg:absolute z-20 overflow-hidden md:lg:top-1/2 -left-10 flex justify-center -mt-16 md:justify-center">
                       <img
                         className="object-cover w-20 h-20 ring-4 ring-white shadow-md shadow-gray-500 rounded-full "
@@ -276,7 +277,7 @@ const Article = () => {
               <div
                 className="absolute bottom-0 w-[150px] py-2 flex"
                 data-glide-el="controls[nav]"
-                // style={bulletContainerStyle}
+                style={bulletContainerStyle}
               >
                 {bulletItems.map((bullet, id) => (
                   <button
@@ -296,7 +297,7 @@ const Article = () => {
         </div>
       </section>
 
-      <section>
+      <section className=" bg-[#e9ecef]">
         <div className="container px-5 pt-24 mx-auto">
           <div className="lg:w-full flex flex-col sm:flex-row sm:items-center justify-between items-start mx-auto">
             <div className="font-san  ">
