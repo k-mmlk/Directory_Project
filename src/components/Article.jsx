@@ -72,7 +72,7 @@ const Article = () => {
         className=" h-[532px] bg-center opacity-100 bg-cover "
       >
         <div className="bg-black/20  w-full h-[532px]  ">
-          <div className="flex flex-col justify-start items-start ml-8  lg:ml-[100px] py-[180px] w-[330px]  lg:w-[1000px]">
+          <div className="flex flex-col justify-start items-start ml-3 md:ml-28 xl:ml-[130px] 3xl:ml-[280px] py-[180px] w-[330px]  lg:w-[1000px]">
             <h1 className="lg:text-7xl mb-10 text-white font-bold font-fair text-4xl ">
               Ready for your next holidays?
             </h1>
@@ -297,8 +297,8 @@ const Article = () => {
         </div>
       </section>
 
-      <section className=" bg-[#e9ecef]">
-        <div className="container px-5 pt-24 mx-auto">
+      <section className=" bg-[#e9ecef] ">
+        <div className=" px-5 pt-24 md:lg:xl:2xl:mx-[100px]">
           <div className="lg:w-full flex flex-col sm:flex-row sm:items-center justify-between items-start mx-auto">
             <div className="font-san  ">
               <p className="text-pink-500 font-semibold sm:text-base md:lg:text-lg  tracking-[0.2em]">
@@ -334,14 +334,14 @@ const Article = () => {
           </div>
         </div>
 
-        <div className="container px-5 py-24 mx-auto font-san">
+        <div className=" px-5 py-24 md:lg:xl:2xl:mx-[100px] font-san">
           <div className="flex flex-wrap -m-4">
             {blogItems.map(({ id, img, link1, link2, para }) => (
               <div
-                className="p-4 lg:w-1/3 md:w-1/2 hover:-translate-y-2"
+                className="p-4 lg:w-1/3 md:w-1/2  hover:-translate-y-2"
                 key={id}
               >
-                <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <div className="h-full  bg-white shadow-md shadow-gray-400 rounded-lg overflow-hidden">
                   <img
                     className="lg:h-64 md:h-36 w-full object-cover object-center"
                     src={img}
